@@ -15,6 +15,9 @@ class ParseTestCase(unittest.TestCase):
         assert result["blog"]["title"] == "Blog"
         assert len(result["categories"]) is 1
         assert len(result["tags"]) is 1
+        first_post_tags = result["posts"][0]["tags"]
+        assert 'nicename' in first_post_tags[0]
+        assert 'name' in first_post_tags[0]
 
     def test_attachment_metadata(self):
         result = parse("./blog.wordpress.2014-09-26.xml")

@@ -284,7 +284,12 @@ def _parse_posts(element):
             else:
                 item_list = tags
 
-            item_list.append(category_item.attrib["nicename"])
+            item_list.append(
+                {
+                    'nicename': category_item.attrib["nicename"],
+                    'name': category_item.text
+                }
+            )
 
         post = {
             "title": title,

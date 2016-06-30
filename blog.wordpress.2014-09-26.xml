@@ -65,6 +65,7 @@
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 		<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+		<category domain="post_tag" nicename="news"><![CDATA[News]]></category>
 		<wp:comment>
 			<wp:comment_id>1</wp:comment_id>
 			<wp:comment_author><![CDATA[Mr WordPress]]></wp:comment_author>
