@@ -24,6 +24,7 @@ class ParseTestCase(unittest.TestCase):
         assert "postmeta" in post
         assert "attached_file" in post["postmeta"]
         assert "attachment_metadata" in post["postmeta"]
+        assert "_wp_page_template" in post["postmeta"]
 
         attached_file = post["postmeta"]["attached_file"]
         assert attached_file == "logo-promo.png"
